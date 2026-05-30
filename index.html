@@ -357,6 +357,14 @@
     .pj-video-full { overflow: hidden; border-radius: 30px; width: 100%; height: clamp(300px, 42vw, 600px); }
     @media (min-width: 768px) { .pj-video-full { border-radius: 50px; } }
     .pj-video-full video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .pj-video-full iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .pj-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .pj-link { font-size: 13px; letter-spacing: 0.02em; text-decoration: none; color: rgba(215,226,234,0.7); border: 1px solid rgba(215,226,234,0.18); border-radius: 100px; padding: 8px 18px; transition: color 0.25s, border-color 0.25s, background 0.25s; }
+    .pj-link:hover { color: #fff; border-color: rgba(215,226,234,0.4); background: rgba(215,226,234,0.06); }
+    .pj-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+    @media (min-width: 640px) { .pj-gallery { gap: 16px; } }
+    .pj-gallery img { width: 100%; height: clamp(120px, 18vw, 240px); object-fit: cover; border-radius: 20px; display: block; }
+    @media (min-width: 768px) { .pj-gallery img { border-radius: 28px; } }
 
     /* CONTACT */
     #contact-section {
@@ -550,6 +558,32 @@
             <video id="muxAiAdoption" autoplay loop muted playsinline preload="auto" poster="https://image.mux.com/BuGGTsiXq1T00WUb8qfURrHkTCbhrkfFLSv4uAOZzdhw/thumbnail.jpg?width=1280" data-hls="https://stream.mux.com/BuGGTsiXq1T00WUb8qfURrHkTCbhrkfFLSv4uAOZzdhw.m3u8">
               <source src="https://stream.mux.com/BuGGTsiXq1T00WUb8qfURrHkTCbhrkfFLSv4uAOZzdhw/high.mp4" type="video/mp4" />
             </video>
+          </div>
+        </div>
+      </div>
+      <div class="project-slot">
+        <div class="project-card" data-idx="3" style="top:84px">
+          <div class="project-top">
+            <div class="project-top-left">
+              <div class="project-num">04</div>
+              <div class="project-meta">
+                <div class="project-cat"><span data-lang="fr">Hackathon &middot; IA &amp; Automatisation</span><span data-lang="en">Hackathon &middot; AI &amp; Automation</span></div>
+                <div class="project-name">Mirakl &mdash; Prospection automatisee</div>
+              </div>
+            </div>
+            <a href="https://www.loom.com/share/87be14cf28db4e38912488593f930e47" target="_blank" rel="noopener" class="btn-live"><span data-lang="fr">Voir la demo</span><span data-lang="en">Watch demo</span></a>
+          </div>
+          <div class="pj-video-full">
+            <iframe src="https://www.loom.com/embed/87be14cf28db4e38912488593f930e47" allow="fullscreen" allowfullscreen loading="lazy" title="Mirakl hackathon demo"></iframe>
+          </div>
+          <div class="pj-gallery">
+            <img src="assets/mirakl-team.jpg" alt="Equipe hackathon Mirakl" loading="lazy" />
+            <img src="assets/mirakl-logo.jpg" alt="Mirakl" loading="lazy" />
+          </div>
+          <div class="pj-links">
+            <a class="pj-link" href="https://www.loom.com/share/87be14cf28db4e38912488593f930e47" target="_blank" rel="noopener"><span data-lang="fr">Demo Loom</span><span data-lang="en">Loom demo</span></a>
+            <a class="pj-link" href="https://canva.link/j5sn6uwsta7i2dw" target="_blank" rel="noopener"><span data-lang="fr">Presentation Canva</span><span data-lang="en">Canva deck</span></a>
+            <a class="pj-link" href="https://www.notion.so/Livrables-4-Exports-techniques-34b6c642b9fd805ab159dea2c30cb31e" target="_blank" rel="noopener"><span data-lang="fr">Ressources Notion</span><span data-lang="en">Notion resources</span></a>
           </div>
         </div>
       </div>
